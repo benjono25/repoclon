@@ -1,0 +1,77 @@
+h3 {
+text-align:center;
+margin-top:2%;
+color:#008800;
+}
+
+#ventanaform {
+  width:97%;
+  background-color:rgba(4, 170, 248, 0.148);
+  border:1px solid #0a0127;
+}
+#ventanaform form input,
+#ventanaform form select,
+#ventanaform form label {
+  width:20%; 
+  float:left;
+  margin-left:1%; 
+  margin-top:1%;
+  font-family:verdana;
+  font-size:80%;
+}
+#ventanaform form ul li label input[type="radio"] {
+  width:10%; 
+  float:left;
+  font-family:verdana;
+  font-size:80%;
+  margin-left:7%; 
+  display:block;
+}
+#menusubmit {
+  margin:0.5% 5%;
+  list-style-type:none;
+}
+
+#menusubmit ul {
+  float:left;
+} 
+#menusubmit ul input{
+  text-decoration:none;
+  text-align:left;
+  color:#ffff00;
+  background-color:#008800;
+  display:block;
+  cursor:wait;
+  font-size:65%;
+}
+.formulario ul li input.align-left{
+	float:left;
+}
+
+.formulario align-left {
+      float:left;
+}
+.formulario ul {
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+
+.formulario ul li {
+  display: block;
+	margin-bottom: 1%;
+	min-height: 2%;
+}
+.formualrio ul input[type="reset"], 
+.formulario ul input[type="submit"],
+.formulario ul a {
+  width:16%;
+  text-decoration:none;
+  text-align:center;
+  color:#ffff00;
+  background-color:#008800;
+  display:block;
+  float:left;
+  font-size:90%;
+  font-family:tahoma;
+}
