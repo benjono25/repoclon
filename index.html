@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+ <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="StyleSheet" href="miestilo4.css" type="text/css"> 
+</head>
+<body> 
+  <h3>ACTUALIZACION CLIENTES/EMPLEADOS/PROVEEDORES</h3>
+  <div id="ventanaform">
+    <form action="#" method="post" class="formulario">
+     <ul>
+       <li><label>IDENTIFICACION:</label>
+           <input
+	         type="text" name="cedula" class="align-left"  maxlength="11" required placeholder="Numero Cedula"></li><br><br>
+       <li><label>PRIMER NOMBRE:</label>
+           <input type="text" name="pnombre" class="align-left" maxlength="15" required >
+           <label>SEGUNDO NOMBRE:</label>
+           <input type="text" name="snombre" maxlength="15" ></li><br><br>
+       <li><label>PRIMER APELLIDO:</label>
+           <input type="text" name="papellido" class="align-left" maxlength="15" required >
+           <label>SEGUNDO APELLIDO:</label>
+           <input type="text" name="sapellido" maxlength="15"  size="15"></li><br><br>
+       <li><label>DIRECCION:</label>
+           <input type="text" name="direccion"  class="align-left" maxlength="20" required >
+           <label>CIUDAD/BARRIO:</label>
+           <select name="ciudad" required>
+               <option values="1">Cali</option>
+               <option values="2">Palmira</option>
+               <option values="3">Yumbo</option>
+               <option values="4">Jamundi</option>
+               <option values="5">Candelaria</option>
+          </select></li><br><br>
+           <label>TELEFONO:</label>
+       <li><input type="tel" name="telefono" maxlength="11" required placeholder="Fijo/Celular">
+           <label>EMAIL:</label>
+           <input type="email" name="email" class="align-left" maxlength="25" required > </li><br><br>
+	  <li><label>FECHA NACIMIENTO:</label>
+           <input type="date" name="fechanac"  class="align-left" maxlength="10"  required placeholder="aaaa/mm/dd"> 
+           <label>PROFESION/OFICIO:</label>
+           <input type="text" name="oficio"  class="align-left" maxlength="30"></li><br>
+      <li><label>TIPO PERSONA:</label></li><br>
+          <label><input type="radio" name="tusua" value="1" checked> Cliente</label>
+          <label><input type="radio" name="tusua" value="2"> Empleado</label>
+          <label><input type="radio" name="tusua" value="3"> Proveedor</label></li><br><br>
+	 </ul>
+      <ul id="menusubmit">
+        <input type="reset" value="LIMPIAR">
+        <input type="submit" value="NUEVO" formaction="guardaper.php">
+		<input type="submit" value="CONSULTAR" formaction="modiper.php" formnovalidate>
+        <input type="submit" value="CANCELAR"  formaction="abreproc.php" formnovalidate>
+      </ul>
+    </form>
+  </div>
+</body>
+</html>
